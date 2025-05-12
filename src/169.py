@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         """
@@ -8,7 +9,7 @@ class Solution:
         counts = {}
         for num in nums:
             counts.setdefault(num, 0)
-            counts[num]+=1
+            counts[num] += 1
         max_value = 0
         max_key = None
         for key, value in counts.items():

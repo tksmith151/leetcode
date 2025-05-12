@@ -26,9 +26,6 @@ class Solution:
         for replace_index in range(place_index, len(nums)):
             nums[replace_index] = None
         return place_index
-            
-
-                    
 
 
 if __name__ == "__main__":
@@ -37,11 +34,11 @@ if __name__ == "__main__":
     output = solution.removeDuplicates(test)
     print(output)
     print(test)
-    test = [1,1,1,2,2,3]
+    test = [1, 1, 1, 2, 2, 3]
     output = solution.removeDuplicates(test)
     print(output)
     print(test)
-    test = [1,2]
+    test = [1, 2]
     output = solution.removeDuplicates(test)
     print(output)
     print(test)

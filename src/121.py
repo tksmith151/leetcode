@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         # No trades if less than 2 entries
@@ -9,7 +10,7 @@ class Solution:
         current_profit = 0
         for index in range(1, len(prices)):
             # Get daily change
-            last = prices[index-1]
+            last = prices[index - 1]
             new = prices[index]
             diff = new - last
             current_profit += diff
@@ -21,8 +22,8 @@ class Solution:
                 current_profit = 0
         return best_profit
 
+
 if __name__ == "__main__":
     solution = Solution()
-    test = [7,1,5,3,6,4]
+    test = [7, 1, 5, 3, 6, 4]
     print(solution.maxProfit(test))
-
