@@ -2,6 +2,9 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        """
+        Use a dictionary to track a count of each number and then find the max count
+        """
         counts = {}
         for num in nums:
             counts.setdefault(num, 0)
